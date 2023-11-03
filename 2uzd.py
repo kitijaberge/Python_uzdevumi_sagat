@@ -15,3 +15,21 @@ pip install feedparser
 """
 
 import feedparser
+
+# define URL uz RSS plūsmu
+
+rss_url='https://news.google.com/home?hl=lv&gl=LV&ceid=LV:lv'
+
+#iegūst RSS plūsmas datus un veicam analīzi..
+
+kkk=feedparser.parse(rss_url)
+
+#noformēšana
+for entry in kkk.entries:
+    print("Virsraksts", entry.title)
+    print("Saite", entry.link)
+    print("Publicēšanas datums", entry.published)
+    print("\n")  #jaunās rindas simbols html \ tatad parcelts uz nakamo rindu
+
+
+
