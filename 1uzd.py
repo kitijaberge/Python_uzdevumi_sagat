@@ -41,13 +41,12 @@ def to_roman(self, num):   #kad izsauc no klases, janodod skaitlis tpe ir num
                 result += numeral 
                 num -= value  #num=num-value
         return result 
-       
-   #piemērs
+        #piemērs
         skaitlis=21
    #define objekru
         kk=BBB()
    #jaunajam objektam jaizsauc klases metode
-     romiesu=kk.to_roman(skaitlis)
+        romiesu=kk.to_roman(skaitlis)
 
    #noformet izdruku
-   print(f"{skaitlis} ar romiesu cipariem ir {romiesu}.")
+        print(f"{skaitlis} ar romiesu cipariem ir {romiesu}.")
